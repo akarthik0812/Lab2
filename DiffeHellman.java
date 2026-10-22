@@ -27,7 +27,7 @@ kpg.initialize(512);
 KeyPairkp = kpg.generateKeyPair();
 KeyFactorykfactory = KeyFactory.getInstance("DiffieHellman");
 DHPublicKeySpeckspec = (DHPublicKeySpec)
-                        kfactory.getKeySpec(kp.getPublic().DHPublicKeySpec.class);
+                        kfactory.getKeySpec(kp.getPublic(),DHPublicKeySpec.class);
 System.out.println("Public key is: " +kspec);
 }
 public static void createSpecificKey(BigInteger p, BigInteger g) throws Exception
